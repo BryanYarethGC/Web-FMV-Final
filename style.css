@@ -1,0 +1,102 @@
+body{
+    height: max-content;
+}
+button{
+    border: 0px;
+}
+#menu_img:hover{
+    border: 2px solid black;
+}
+header{
+    height: 50px;
+    background-color: #1892a6;
+    color: white;
+    display: flex;
+    position: relative;
+}
+#header{
+    margin-right: 200px;
+    margin-left: 30px;
+    font-family:sans-serif;
+
+}
+
+.logo{
+    position: relative;
+    height: 50px;
+    align-self: flex-end;
+    border: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    margin: 30px;
+    position: relative;
+    background-color:#82d8e6;
+    padding: 10px;
+    border:10px ;
+    border-radius: 10px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    font-size: xx-large;
+}
+.menu{
+    font-family:sans-serif;
+    background-color: #82d8e6 ;
+    width: 200px;
+    text-align: center;
+    font-weight: 900;
+    height: 653px; ;
+}
+
+.container{
+    display: flex;
+}
+.botones{
+    margin-left: 200px;
+    display: flex;
+    width: 60%;
+    font-weight: 900;
+    font-size: medium;
+}
+.botonprinc{
+    background-color: #82d8e6;
+    display: grid;
+    padding: 30px;
+    margin: 50px;
+    border: 3px;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.boton p{
+    border: 3px;
+    border-radius:10px;
+    text-decoration: none;
+}
+.boton{
+    text-decoration: none;
+}
+.boton:hover p{
+    background-color: #1892a6;
+}
+
+.botonprinc:hover{
+    background-color:#1892a6;
+    transform: scale(1.125);
+}
+
+.img p{
+    background: white;
+    color: #1892a6;
+}
+
