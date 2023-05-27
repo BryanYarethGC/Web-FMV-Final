@@ -151,3 +151,22 @@ div.formulario
     border: 4px solid #729ca2;
     border-radius: 8px;
 }
+div.circulos
+{
+    width: 100%;
+    padding: 20px;
+}
+img.circulo
+{
+    width: 300px;
+    margin: 20px;
+}
+img.circulo:hover
+{
+    width: 340px;
+}
+li
+{
+    font-size: large;
+    margin: 8px;
+}
