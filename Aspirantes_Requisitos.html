@@ -2,77 +2,88 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="function.js"></script>
     </head>
     <body>
         <header>
             <button >
                 <img id="menu_img" src="media/menu.png" onclick="return menu()" alt="menu" width="50px" height=auto>
             </button>
-            <img src="media/logoprep.png" style="height: 100px; margin-left: 150px;" alt="logo prepa">
+            <a href="index.html">
+                <img src="media/logoprep.png" style="height: 100px; margin-left: 150px;" alt="logo prepa">
+            </a>
             <h2 id="header">Escuela Preparatoria Francisco Martinez de la Vega</h2>
             <img class="logo"src="media/logoslp.jpg" alt="logo slp">
             <img class="logo" src="media/logoseer.jpg" alt="logo seer">
         </header>
-        <br>
-        <div class="slogan">
-            <h1 class="contacto">R E Q U I S I T O S</h1>
-        </div>
-        <div style="display: flex;">
-            <div style="width: 50%; margin: 20px;">
-                <h3 style="font-size: large;">Perfil de Estudiante</h3>
-                <br>
-                <li>Edad: Ser menor de 17 años</li>
-                <li>Haber concluido satisfactoriamente su educación secundaria (con certificado). </li>
-                <li>Ser estudiante de tiempo completo. </li>
-                <li>Buena Conducta</li>
-            </div>
-            <div style="width: 30%; margin: 20px;">
-                <img src="media/VALORES.png">
-            </div>
-        </div>
-        <div>
-            <div style=" height: 75px; background-color: rgb(212, 212, 212); color: rgb(110, 155, 155);"><h3 style="font-size: 1.5pc;"><center>Requisitos para la Credencias del examen de selección y diagnostico</center></h3></div>
-            <div style="display: flex;">
-                <div style="width: 40%; margin: 20px;">
-                    <center>
-                    <img src="media/estudiante.jpg"> </center>
-                </div>
-                <div style="width: 60%; margin: 20px;">
-                    <p>Presentarse en la fecha y hora señalada en la ficha de atención con la siguiente documentación:</p>
-                    <ul type="circle">
-                        <li>Hoja de pre registro (lo realizarán vía internet, ingresar a la liga e imprimir. https://seer.gob.mx/siems/instituciones)</li>
-                        <center>
-                            <br>
-                        <a href="Aspirantes_Requisitos_Instrucciones.html"><button style="width: 120px; height: 40px; color: white;border: 2px solid rgb(75, 97, 97); border-radius: 8px; background-color: rgb(159, 198, 198);">Instrucciones</button></a>
-                        <a href="https://seer.gob.mx/siems/instituciones"><button style="width: 120px; height: 40px; color: white;border: 2px solid rgb(75, 97, 97); border-radius: 8px; background-color: rgb(159, 198, 198);">Pre registro</button></a>
-                        <br><br>
-                        </center>
-                        <li>Copia fotostática del Acta de Nacimiento del estudiante</li>
-                        <li>Constancia de estudios cursando el 3er año de secundaria o copia fotostática del certificado de secundaria</li>
-                        <li>Tres fotografías tamaño infantil papel mate (blanco - negro o de color con ropa clara) recientes e iguales (NO INSTANTANEAS)</li>
-                        <li>Original y copia del pago de cuota de derecho a examen $250.00 (DOCIENTOS CINCUENTA PESOS 00/100 M.N.) que se depositará en el Banco Banorte a nombre del estado de San Luis Potosí: </li>
-                        <ul type="disc">
-                            <li>CUENTA No. 1166463593</li>
-                        </ul>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div><center><h2>Examen de Selección y Diagnostico</h2></center></div>
-            <center>
-                <div style="width: 30%;">
-                    <p>El examen se realizará el día 03 de junio a las 8:00 (presentarse con su credencial del trámite de preinscripción)<br><br>Entrega de resultados 16 de junio del 2023</p>
-                </div>
-            </center>
-        </div>
-        <center>
-            <div class="slogan1">
+        <div class="container">
+            <nav id="menu">
+            </nav>
+            <br>
+            <div class="body">
                 <div class="slogan">
-                    <h1 class="slogan"> Esculea Preparatoria "Francisco Martínez de la Vega" </h1>
+                    <h1 class="contacto">R E Q U I S I T O S</h1>
                 </div>
-                <h5 class="contacto">¡Una desición inteligente!</h5>
-            </div> 
-        </center>
+                <div style="display: flex;">
+                    <div style="width: 50%; margin: 20px;">
+                        <h3 style="font-size: large;">Perfil de Estudiante</h3>
+                        <br>
+                        <li>Edad: Ser menor de 17 años</li>
+                        <li>Haber concluido satisfactoriamente su educación secundaria (con certificado). </li>
+                        <li>Ser estudiante de tiempo completo. </li>
+                        <li>Buena Conducta</li>
+                    </div>
+                    <div style="width: 30%; margin: 20px;">
+                        <img src="media/VALORES.png">
+                    </div>
+                </div>
+                <div>
+                    <div style=" height: 75px; background-color: rgb(212, 212, 212); color: rgb(110, 155, 155);"><h3 style="font-size: 1.5pc;"><center>Requisitos para la Credencias del examen de selección y diagnostico</center></h3></div>
+                    <div style="display: flex;">
+                        <div style="width: 40%; margin: 20px;">
+                            <center>
+                            <img src="media/estudiante.jpg"> </center>
+                        </div>
+                        <div style="width: 60%; margin: 20px;">
+                            <p>Presentarse en la fecha y hora señalada en la ficha de atención con la siguiente documentación:</p>
+                            <ul type="circle">
+                                <li>Hoja de pre registro (lo realizarán vía internet, ingresar a la liga e imprimir. https://seer.gob.mx/siems/instituciones)</li>
+                                <center>
+                                    <br>
+                                <a href="Aspirantes_Requisitos_Instrucciones.html"><button class="boton2">Instrucciones</button></a>
+                                <a href="https://seer.gob.mx/siems/instituciones" target="_blank"><button class="boton2">Pre registro</button></a>
+                                <br><br>
+                                </center>
+                                <li>Copia fotostática del Acta de Nacimiento del estudiante</li>
+                                <li>Constancia de estudios cursando el 3er año de secundaria o copia fotostática del certificado de secundaria</li>
+                                <li>Tres fotografías tamaño infantil papel mate (blanco - negro o de color con ropa clara) recientes e iguales (NO INSTANTANEAS)</li>
+                                <li>Original y copia del pago de cuota de derecho a examen $250.00 (DOCIENTOS CINCUENTA PESOS 00/100 M.N.) que se depositará en el Banco Banorte a nombre del estado de San Luis Potosí: </li>
+                                <ul type="disc">
+                                    <li>CUENTA No. 1166463593</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div><center><h2>Examen de Selección y Diagnostico</h2></center></div>
+                    <center>
+                        <div style="width: 30%;">
+                            <p>El examen se realizará el día 03 de junio a las 8:00 (presentarse con su credencial del trámite de preinscripción)<br><br>Entrega de resultados 16 de junio del 2023</p>
+                        </div>
+                    </center>
+                </div>
+                <center>
+                    <div class="slogan1">
+                        <div class="slogan">
+                            <h1 class="slogan"> Esculea Preparatoria "Francisco Martínez de la Vega" </h1>
+                        </div>
+                        <h5 class="contacto">¡Una desición inteligente!</h5>
+                    </div> 
+                </center>
+            </div>
+            
+        </div>
+        
     </body>
 </html>

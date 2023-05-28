@@ -20,7 +20,13 @@ header{
     font-family:sans-serif;
 
 }
-
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
 .logo{
     position: relative;
     height: 50px;
@@ -30,11 +36,15 @@ header{
     margin-right: 10px;
     border-radius: 5px;
 }
-.body{
+.body_index{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.body{
+    width: 85%;
+    margin: 20px;
 }
 .img{
     margin: 30px;
@@ -89,7 +99,18 @@ header{
 .boton:hover p{
     background-color: #1892a6;
 }
-
+.boton2{
+    width: 120px; 
+    height: 40px; 
+    color: white;
+    border: 2px solid rgb(75, 97, 97); 
+    border-radius: 8px; 
+    background-color: rgb(159, 198, 198);
+}
+.boton2:hover{
+    background-color: #46c1d4;
+    color: black;
+}
 .botonprinc:hover{
     background-color:#1892a6;
     transform: scale(1.125);
