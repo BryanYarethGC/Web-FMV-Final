@@ -314,6 +314,10 @@ div.planestudios
         font-weight: 900;
         height: 653px; ;
     }
+    div.contacto_general
+    {
+        display: grid;
+    }
     div.menu2:hover>a.boton3 *{
         padding: 5px; 
     }
