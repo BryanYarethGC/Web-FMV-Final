@@ -236,7 +236,7 @@ button.resultados:hover
     border: 4px solid #2a5e65;
     background-color: #93c3ca;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .logo{
         height: 50px;
         border: 2px;
