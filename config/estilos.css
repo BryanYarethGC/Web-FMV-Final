@@ -318,6 +318,15 @@ div.planestudios
     {
         display: grid;
     }
+    div.formulario
+    {
+        padding: 20px;
+        margin: 80px;
+        width: 80%;
+        background-color: #dbebed;
+        border: 4px solid #729ca2;
+        border-radius: 8px;
+    }
     div.menu2:hover>a.boton3 *{
         padding: 5px; 
     }
