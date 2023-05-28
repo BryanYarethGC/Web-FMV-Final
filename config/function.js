@@ -15,9 +15,9 @@ function menu(){
     
 }
 
-var vsid = "si2547512da9fc5";
+/*var vsid = "si2547512da9fc5";
 (function() { 
 var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
     vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
-})();
+})();*/
