@@ -236,7 +236,7 @@ button.resultados:hover
     border: 4px solid #2a5e65;
     background-color: #93c3ca;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .logo{
         height: 50px;
         border: 2px;
@@ -248,6 +248,7 @@ button.resultados:hover
     }
     .body{
         /*display: grid;*/
+        max-width:600px;
         width: 70%;
         margin: 20px;
     }
@@ -297,6 +298,7 @@ button.resultados:hover
         max-height: 100px;
     }
     .menu{
+        max-width: 600px;
         font-family:sans-serif;
         background-color: #82d8e6 ;
         width: 80%;
