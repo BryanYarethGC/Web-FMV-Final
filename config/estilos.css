@@ -236,6 +236,14 @@ button.resultados:hover
     border: 4px solid #2a5e65;
     background-color: #93c3ca;
 }
+div.planestudios
+{
+    background-color: #93c3ca;
+    color: white;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+}
 @media screen and (max-width: 600px) {
     .logo{
         height: 50px;
