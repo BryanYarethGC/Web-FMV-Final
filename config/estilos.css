@@ -67,7 +67,33 @@ a:link, a:visited{
     font-weight: 900;
     height: 653px; ;
 }
-
+div.menu2>.boton3 *{
+    background-color: #2a92a2 ;
+    border: 2px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: .3s all ease-in;
+}
+div.menu2:hover>a.boton3 *{ 
+    padding: 5px;
+    margin: 2px;
+    max-height: 100px;
+    transition: .3s all ease-in;
+}
+div.menu a:hover+div.menu2>.boton3 p{
+    padding: 5px;
+    margin: 5px;
+    max-height: 100px;
+    transition: .3s all ease-in;
+}
+a.boton3:hover p{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #a8d8e0;
+}
 .container{
     display: flex;
 }
@@ -99,6 +125,7 @@ a:link, a:visited{
 .boton:hover p{
     background-color: #1892a6;
 }
+
 .boton2{
     width: 120px; 
     height: 40px; 
