@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>teste para medir nomofobia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .resp{
+      align-self:center;
+      border: 1px solid black;
+      background-color: blue;
+      color:white;
+      border-radius: 5px;
+      padding: 5px;
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-3">
+  <h2>NOMOFOBIA</h2>
+  <p>Indica en una escala de 1 a 10, en donde 1 significa <b>NADA</b> y 10 <b>MUCHO</b> el grado de inquietud y ansiedad que te producririan en este isntante cada uno de estos posibles 8 momentos.</p>
+  <form  name="test" action="" onsubmit="return Calcular()">
+    <label id="pregunta1" class="form-label">Ahora mismo, si quisiera encenderlo y no pudiera o no me lo permitiesen</label>
+    <input onclick="return barra1()" type="range" class="form-range" id="customRange" name="pregunta1" min="1" max="10">
+    <center>
+      <label class="resp" id="preg1"></label> <br>
+    </center>
+    
+
+    <script>
+      function barra1(){
+        let x1 = document.forms["test"]["pregunta1"].value;
+        document.getElementById("preg1").innerHTML= x1;
+      } 
+    </script>
+    <label id="pregunta2" class="form-label">Si en este mismo momento me quedase sin bateria o cobertura</label>
+    <input onclick="return barra2()" type="range" class="form-range" id="customRange" name="pregunta2" min="1" max="10">
+    <center>
+      <label class="resp" id="preg2"></label><br>
+    </center>
+    
+    <script>
+      function barra2(){
+        let x2 = document.forms["test"]["pregunta2"].value;
+      document.getElementById("preg2").innerHTML= x2;
+      }
+      
+    </script>
+    <label id="pregunta3" class="form-label">Si ahora me viese obligado a apagarlo porque estuviese en un cine o en el trabajo</label>
+    <input onclick="return barra3()"type="range" class="form-range" id="customRange" name="pregunta3" min="1" max="10">
+    <center>
+      <label class="resp" id="preg3"></label><br>
+    </center>
+    
+    <script>
+      function barra3(){
+        let x3 = document.forms["test"]["pregunta3"].value;
+      document.getElementById("preg3").innerHTML= x3;
+      }
+      
+    </script>
+    <label id="pregunta4" class="form-label">Si ahora mismo me diese cuenta de que se me ha olvidado en casa</label>
+    <input onclick="return barra4()" type="range" class="form-range" id="customRange" name="pregunta4" min="1" max="10">
+    <center>
+      <label class="resp" id="preg4"></label><br>
+    </center>
+
+    <script>
+      function barra4(){
+        let x4 = document.forms["test"]["pregunta4"].value;
+      document.getElementById("preg4").innerHTML= x4;
+      } 
+    </script>
+    <label id="pregunta5" class="form-label">Ahora, si no pudiese o no me dejasen responder a un whatsapp o mensaje</label>
+    <input onclick="return barra5()" type="range" class="form-range" id="customRange" name="pregunta5" min="1" max="10">
+    <center>
+      <label class="resp" id="preg5"></label><br>
+    </center>
+    
+    <script>
+      function barra5(){
+        let x5 = document.forms["test"]["pregunta5"].value;
+      document.getElementById("preg5").innerHTML= x5;
+      }
+    </script>
+    <label id="pregunta6" class="form-label">Si estuviese con gente en estos momentos que lo estuviese utilizando y a mi no me funcionase</label>
+    <input onclick="return barra6()" type="range" class="form-range" id="customRange" name="pregunta6" min="1" max="10">
+    <center>
+      <label class="resp" id="preg6"></label><br>
+    </center>
+    
+    <script>
+      function barra6(){
+        let x6 = document.forms["test"]["pregunta6"].value;
+      document.getElementById("preg6").innerHTML= x6;
+      }
+      
+    </script>
+    <label id="pregunta7" class="form-label">Si estuviera en un sitio o situación en donde siempre lo utilizo y ahora no pudiera </label>
+    <input onclick="return barra7()" type="range" class="form-range" id="customRange" name="pregunta7" min="1" max="10">
+    <center>
+      <label class="resp" id="preg7"></label><br>
+    </center>
+    
+    <script>
+      function barra7(){
+        let x7 = document.forms["test"]["pregunta7"].value;
+      document.getElementById("preg7").innerHTML= x7;
+      }
+      
+    </script>
+    <label id="pregunta8" class="form-label">Si en este momento estuviese inquieto, necesitase relajarme y no lo tuviese a mano </label>
+    <input onclick="return barra8()" type="range" class="form-range" id="customRange" name="pregunta8" min="1" max="10">
+    <center>
+      <label class="resp" id="preg8"></label><br>
+    </center>
+    
+    <script>
+      function barra8(){
+        let x8 = document.forms["test"]["pregunta8"].value;
+      document.getElementById("preg8").innerHTML= x8;
+      }
+    </script>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+  <p id="help"></p>
+</div>
+<script>
+  function Calcular() {
+    let x=0;
+    let total=0;
+    let txt=" ";
+    for(i=1;i<9;i++){
+      x=document.forms["test"]["pregunta"+i].value;
+      total+=Number(x);
+    }
+    if (total <=13) {
+      txt="Total: "+total+"\nUSUARIO OCASIONAL\nninguna dependencia al movil";
+      
+    }
+    else if(total >=14 && total <=31) {
+      txt="Total: "+total+"\nUSUARIO HABITUAL\nninguna dependencia al movil pero lo usas con frecuencia";
+    }
+    else if(total >=32 && total <=36) {
+      txt="Total: "+total+"\nUSUARIO EN RIESGO\ndependencia elevada";
+    }
+    else if(total>36){
+      txt="Total: "+total+"\nUSUARIO PROBLEMATICO\nno puedes separarte de tu dispositivo";
+
+
+    } 
+
+    var nombre=prompt("Como te llamas?");
+    var edad=prompt("Cual es tu edad");
+    var arch=prompt("Guardar Como: ");
+    var doc = new jsPDF();
+    let msj=" ";
+    doc.setFontSize(40);
+    doc.text(40,10,"Test de Nomofobia");
+    doc.setFontSize(20);
+    doc.text(20,20,"Nombre: "+nombre);
+    doc.text(20,30,"Edad: "+edad);
+    doc.setFontSize(16);
+    doc.text(40,40,"Preguntas");
+    for(let i=1;i<9;i++){
+      msj=document.getElementById("pregunta"+i).innerHTML;
+      doc.text(20, 40+((i+(i-1))*10), (i)+"-"+msj);
+      doc.text(20, 40+(i*20),"Nivel de ansiedad: "+document.forms["test"]["pregunta"+i].value);
+    }
+    doc.text(40,200,"Resultado");
+    alert(txt);
+
+    doc.text(20,210,txt);
+    document.getElementById("help"),innerHTML="heeeeelp";
+    doc.save("prueba.pdf");
+    
+}
+</script>
+</body>
+</html>
