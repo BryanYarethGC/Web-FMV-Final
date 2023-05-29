@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Vocacional</title>
+        <script src="config/function.js"></script>
+        <link rel="stylesheet" href="config/estilos.css">
+        <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p{
+                font-size: medium;
+            }
+        </style>
+        <script>
+            function resultado()
+            {
+                let i=0; 
+                let exterior=0; 
+                let mecanica=0; 
+                let calculo=0; 
+                let cientifica=0; 
+                let persuasiva=0; 
+                let artistica=0; 
+                let literaria=0; 
+                let musical=0; 
+                let social=0; 
+                let oficina=0; 
+                let n=0; 
+                for(i=1; i<=45; i++)
+                {
+                    let x = document.forms["test_vocacional"]["preg"+i].value; 
+                    
+                    if(x==0)
+                    { 
+                        exterior=exterior+1; 
+                    }
+                    if(x == 1) 
+                    {
+                        mecanica++; 
+                    }
+                    if(x==2)
+                    {
+                        n++;
+                        calculo++; 
+                    }
+                    if(x==3)
+                    {
+                        cientifica++; 
+                    }
+                    if(x==4)
+                    {
+                        persuasiva++; 
+                    }
+                    if(x==5)
+                    {
+                        artistica++; 
+                    }
+                    if(x==6)
+                    {
+                        literaria++; 
+                    }
+                    if(x==7)
+                    {
+                        musical++; 
+                    }
+                    if(x==8)
+                    {
+                        social++; 
+                    }
+                    if(x==9)
+                    {
+                        oficina++; 
+                    }
+                }
+                alert(exterior); 
+                alert(exterior+","+mecanica+","+calculo+","+cientifica+","+persuasiva+","+artistica+","+literaria+","+musical+","+social+","+oficina); 
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <button >
+                <img id="menu_img" src="media/menu.png" onclick="return menu()" alt="menu" width="50px" height=auto>
+            </button>
+            <a href="index.html">
+                <img class="logo" src="media/logoprep.png" style="height: 100px; margin-left: 150px;" alt="logo prepa">
+            </a>
+            <h2 id="header">Escuela Preparatoria Francisco Martinez de la Vega</h2>
+            <img class="logo"src="media/logoslp.jpg" alt="logo slp">
+            <img class="logo" src="media/logoseer.jpg" alt="logo seer">
+        </div>
+        <div class="container">
+            <nav id="menu">
+            </nav>
+            <br>
+            <div class="body">
+                <h1 class="contacto">T E S T &nbsp;&nbsp;&nbsp;&nbsp;V O C A C I O N A L </h1> 
+                <br><br>
+                <div>
+                    <center>
+                    <p>El test vocacional es una prueba diseñada para conocer las areas de interés de la persona que lo contesta, y tiene la finalidad de conocer un perfil eductivo de esta misma.
+                        <br>
+                        Estas pruebas son herramientas que sirven para recabar información del estudiante y que permite elaborar un perfil orientativo.
+                        <br>
+                        Es decir, realizar un test vocacional solo sirve de orientación, es una base o un consejos que te dará una idea sobre qué decisión tomar. Por lo tanto, solo deben presentarse como una guía o referencia.
+                    </p>
+                    <h2>Instrucciones</h2>
+                    <P>A continuacion se presentara un test vocacional, en el cual usted deberá decidir entre dos opciones, indicando la que sea de tu mayor agrado</P>
+                    </center>
+                </div>
+                <div style="background-color: rgb(132, 177, 177); color: white; padding: 30px; margin: 50px;">
+                    <form name="test_vocacional" action="" onsubmit="return resultado()">
+                        <p>Que prefieres?..</p>
+                        <p>1.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg1" value="7" checked>
+                            <label class="form-check-label" for="radio1">Ser un artista</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg1" value="0" checked>
+                            <label class="form-check-label" for="radio2">Dirigir la crianza de ganado</label>
+                        </div>
+                        <p>2.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg2" value="1" checked>
+                            <label class="form-check-label" for="radio1">Conocer datos útiles para navegar en internet.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg2" value="3" checked>
+                            <label class="form-check-label" for="radio2"> Dar charlas sobre química. </label>
+                        </div>
+                        <p>3.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg3" value="4" checked>
+                            <label class="form-check-label" for="radio1">Trabajar en una agencia de publicidad</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg3" value="0" checked>
+                            <label class="form-check-label" for="radio2"> Estudiar métodos de regadío. </label>
+                        </div>
+                        <p>4.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg4" value="5" checked>
+                            <label class="form-check-label" for="radio1">Tomar clases de locución y expresión corporal. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg4" value="3" checked>
+                            <label class="form-check-label" for="radio2"> Realizar experimentos.  </label>
+                        </div>
+                        <p>5.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg5" value="5" checked>
+                            <label class="form-check-label" for="radio1">Ilustrar cuentos infantiles </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg5" value="6" checked>
+                            <label class="form-check-label" for="radio2"> Ser protagonista de una obra de teatro </label>
+                        </div>
+                        <p>6.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg6" value="4" checked>
+                            <label class="form-check-label" for="radio1"> Animar un programa de televisión.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg6" value="5" checked>
+                            <label class="form-check-label" for="radio2">  Crear el vestuario para una obra de teatro.</label>
+                        </div>
+                        <p>7.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg7" value="0" checked>
+                            <label class="form-check-label" for="radio1">Ser guía de excursiones  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg7" value="8" checked>
+                            <label class="form-check-label" for="radio2">   Participar en campaña de ayuda a niños discapacitados.</label>
+                        </div>
+                        <p>8.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg8" value="7" checked>
+                            <label class="form-check-label" for="radio1">Aprender bailes folclóricos.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg8" value="5" checked>
+                            <label class="form-check-label" for="radio2"> Ser escultor(a). </label>
+                        </div>
+                        <p>9.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg9" value="2" checked>
+                            <label class="form-check-label" for="radio1"> Trabajar como soporte técnico computacional  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg9" value="4" checked>
+                            <label class="form-check-label" for="radio2">Asistir a una conferencia sobre los derechos de los trabajadores </label>
+                        </div>
+                        <p>10.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg10" value="1" checked>
+                            <label class="form-check-label" for="radio1">Enseñar cómo funciona un motor de avión. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg10" value="0" checked>
+                            <label class="form-check-label" for="radio2">Dirigir la clasificación de fruta según su calidad. </label>
+                        </div>
+                        <p>11.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg11" value="8" checked>
+                            <label class="form-check-label" for="radio1">Participar en un Comité de Navidad recolectando juguetes para niños de escasos recursos. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg11" value="7" checked>
+                            <label class="form-check-label" for="radio2">Componer la música para un poema. </label>
+                        </div>
+                        <p>12.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg12" value="4" checked>
+                            <label class="form-check-label" for="radio1"> Crear afiches para una agencia de publicidad.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg12" value="1" checked>
+                            <label class="form-check-label" for="radio2"> Saber armar y desarmar computadores.  </label>
+                        </div>
+                        <p>13.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg13" value="8" checked>
+                            <label class="form-check-label" for="radio1">  Intervenir en un conflicto familiar ante tribunales de justicia.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg13" value="9" checked>
+                            <label class="form-check-label" for="radio2"> Ser relacionador(a) público(a) de una empresa.  </label>
+                        </div>
+                        <p>14.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg14" value="5" checked>
+                            <label class="form-check-label" for="radio1">  Dirigir una función teatral de aficionados.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg14" value="2" checked>
+                            <label class="form-check-label" for="radio2"> Investigar sobre los nuevos usos de las matemáticas.  </label>
+                        </div>
+                        <p>15.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg15" value="2" checked>
+                            <label class="form-check-label" for="radio1"> Aprender estadística. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg15" value="6" checked>
+                            <label class="form-check-label" for="radio2"> Ser conocido(a) como un(a) buen(a) escritor(a)</label>
+                        </div>
+                        <p>16.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg16" value="2" checked>
+                            <label class="form-check-label" for="radio1"> Ser programador(a) en computación. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg16" value="1" checked>
+                            <label class="form-check-label" for="radio2"> Manejar aparatos y maquinas industriales como prensas, tornos, etc.</label>
+                        </div>
+                        <p>17.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg17" value="3" checked>
+                            <label class="form-check-label" for="radio1">  Efectuar análisis de muestras de sangre.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg17" value="8" checked>
+                            <label class="form-check-label" for="radio2">Investigar las causas de enfermedades mentales.</label>
+                        </div>
+                        <p>18.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg18" value="6" checked>
+                            <label class="form-check-label" for="radio1"> Pertenecer a una Academia Literaria. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg18" value="1" checked>
+                            <label class="form-check-label" for="radio2"> Tener a cargo el equipo agrícola en su fundo.</label>
+                        </div>
+                        <p>19.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg19" value="7" checked>
+                            <label class="form-check-label" for="radio1"> Pertenecer a un grupo musical.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg19" value="3" checked>
+                            <label class="form-check-label" for="radio2"> Ser dentista.</label>
+                        </div>
+                        <p>20.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg20" value="8" checked>
+                            <label class="form-check-label" for="radio1">  Ayudar a niños con dificultades de aprendizaje.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg20" value="4" checked>
+                            <label class="form-check-label" for="radio2"> Dirigir investigaciones sobre televisión. </label>
+                        </div>
+                        <p>21.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg21" value="9" checked>
+                            <label class="form-check-label" for="radio1">Realizar un estudio sobre el desarrollo económico en una empresa. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg21" value="5" checked>
+                            <label class="form-check-label" for="radio2"> Pintar loza.</label>
+                        </div>
+                        <p>22.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg22" value="9" checked>
+                            <label class="form-check-label" for="radio1"> Ser gerente de ventas de una revista. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg22" value="2" checked>
+                            <label class="form-check-label" for="radio2"> Manejar bases de datos</label>
+                        </div>
+                        <p>23.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg23" value="4" checked>
+                            <label class="form-check-label" for="radio1"> Investigar los roles del hombre y de la mujer en algunas sociedades primitivas.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg23" value="7" checked>
+                            <label class="form-check-label" for="radio2"> Inventar nuevas formas de poesía.</label>
+                        </div>
+                        <p>24.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg24" value="3" checked>
+                            <label class="form-check-label" for="radio1"> Trabajar en un laboratorio</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg24" value="4" checked>
+                            <label class="form-check-label" for="radio2">  Entrevistar aspirantes a un empleo</label>
+                        </div>
+                        <p>25.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg25" value="3" checked>
+                            <label class="form-check-label" for="radio1">  Ser químico(a). </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg25" value="2" checked>
+                            <label class="form-check-label" for="radio2">  Leer artículos acerca de los avances tecnológicos en computación.</label>
+                        </div>
+                        <p>26.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg26" value="3" checked>
+                            <label class="form-check-label" for="radio1"> Seguir un curso de biología.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg26" value="6" checked>
+                            <label class="form-check-label" for="radio2">   Escribir una obra de teatro.</label>
+                        </div>
+                        <p>27.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg27" value="6" checked>
+                            <label class="form-check-label" for="radio1">Dar una conferencia sobre literatura universal.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg27" value="4" checked>
+                            <label class="form-check-label" for="radio2">Asistir a la ceremonia de entrega de los premios Oscar.</label>
+                        </div>
+                        <p>28.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg28" value="5" checked>
+                            <label class="form-check-label" for="radio1"> Ser el (la) director(a) de una película. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg28" value="0" checked>
+                            <label class="form-check-label" for="radio2"> Ser experto(a) en cuidar árboles.</label>
+                        </div>
+                        <p>29.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg29" value="1" checked>
+                            <label class="form-check-label" for="radio1"> Mantener en buen estado y reparar calculadoras electrónicas.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg29" value="7" checked>
+                            <label class="form-check-label" for="radio2"> Componer música</label>
+                        </div>
+                        <p>30.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg30" value="8" checked>
+                            <label class="form-check-label" for="radio1">  Ayudar en un servicio de Asistencia Social. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg30" value="1" checked>
+                            <label class="form-check-label" for="radio2"> Arreglar un motor</label>
+                        </div>
+                        <p>31.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg31" value="2" checked>
+                            <label class="form-check-label" for="radio1"> Calcular el costo de producción de un artículo.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg31" value="8" checked>
+                            <label class="form-check-label" for="radio2"> Recolectar dinero para obras sociales.</label>
+                        </div>
+                        <p>32.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg32" value="8" checked>
+                            <label class="form-check-label" for="radio1"> Solucionar conflictos interpersonales. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg32" value="6" checked>
+                            <label class="form-check-label" for="radio2"> Escribir el guion para una película.</label>
+                        </div>
+                        <p>33.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg33" value="1" checked>
+                            <label class="form-check-label" for="radio1"> Diseñar equipos para excursionistas.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg33" value="9" checked>
+                            <label class="form-check-label" for="radio2"> Confeccionar el presupuesto de materiales para una empresa.</label>
+                        </div>
+                        <p>34.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg33" value="4" checked>
+                            <label class="form-check-label" for="radio1"> Ser el rostro de un producto recién lanzado al mercado. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg33" value="9" checked>
+                            <label class="form-check-label" for="radio2">Dictar un curso sobre sistemas de rendimiento en las oficinas.</label>
+                        </div>
+                        <p>35.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg34" value="0" checked>
+                            <label class="form-check-label" for="radio1"> Analizar la calidad de la tierra para fines agrícolas.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg34" value="2" checked>
+                            <label class="form-check-label" for="radio2">Instalar redes internas en diversas empresas.</label>
+                        </div>
+                        <p>36.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg35" value="0" checked>
+                            <label class="form-check-label" for="radio1">Asistir a una conferencia sobre nuevos métodos para aprovechar la madera. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg35" value="9" checked>
+                            <label class="form-check-label" for="radio2"> Realizar el balance anual de una empresa</label>
+                        </div>
+                        <p>37.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg36" value="9" checked>
+                            <label class="form-check-label" for="radio1">Planificar campañas de publicidad. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg36" value="7" checked>
+                            <label class="form-check-label" for="radio2"> Estudiar ballet</label>
+                        </div>
+                        <p>38.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg38" value="3" checked>
+                            <label class="form-check-label" for="radio1">Hacer análisis químicos de nuevos productos </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg38" value="0" checked>
+                            <label class="form-check-label" for="radio2"> Cultivar verduras para el mercado.</label>
+                        </div>
+                        <p>39.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg39" value="1" checked>
+                            <label class="form-check-label" for="radio1">Reparar fallas de artefactos electrónicos (planchas, jugueras, secadores de pelo, etc) </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg39" value="5" checked>
+                            <label class="form-check-label" for="radio2">Escribir para una revista de arte.</label>
+                        </div>
+                        <p>40.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg40" value="7" checked>
+                            <label class="form-check-label" for="radio1">Arreglar música para una orquesta </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg40" value="2" checked>
+                            <label class="form-check-label" for="radio2">Inventar problemas matemáticos.</label>
+                        </div>
+                        <p>41.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg41" value="0" checked>
+                            <label class="form-check-label" for="radio1">Recomendar sitios de veraneo.</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg41" value="6" checked>
+                            <label class="form-check-label" for="radio2">Ser el (la) autor(a) de un libro.</label>
+                        </div>
+                        <p>42.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg42" value="6" checked>
+                            <label class="form-check-label" for="radio1">Seguir un curso de literatura moderna. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg42" value="9" checked>
+                            <label class="form-check-label" for="radio2">Calcular las ganancias y pérdidas de un producto.</label>
+                        </div>
+                        <p>43.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg43" value="5" checked>
+                            <label class="form-check-label" for="radio1"> Diseñar joyas. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg43" value="8" checked>
+                            <label class="form-check-label" for="radio2">Participar en una campaña contra el alcoholismo.</label>
+                        </div>
+                        <p>44.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg44" value="9" checked>
+                            <label class="form-check-label" for="radio1"> Dirigir y supervisar a los empleados de una oficina.  </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg44" value="3" checked>
+                            <label class="form-check-label" for="radio2"> Ser secretario(a) de un científico famoso.</label>
+                        </div>
+                        <p>45.</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="preg45" value="6" checked>
+                            <label class="form-check-label" for="radio1"> Enseñar sobre los diferentes estilos literarios. </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="preg45" value="7" checked>
+                            <label class="form-check-label" for="radio2"> Cantar en un coro.</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
